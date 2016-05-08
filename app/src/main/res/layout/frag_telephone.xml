@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+     <TextView
+         android:id="@+id/number"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:layout_alignLeft="@+id/text"
+         android:layout_marginTop="18dp"
+         android:background="@drawable/button_nfc_action"
+         android:drawableLeft="@drawable/call"
+         android:gravity="center"
+         android:text="Telephone Number"
+         android:textAppearance="?android:attr/textAppearanceLarge"
+         android:textColor="#000000"
+         android:typeface="serif" />
+       
+       
+        
+       <EditText
+         android:id="@+id/editTelephone"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:layout_below="@+id/number"
+         android:layout_marginTop="18dp"
+         android:hint="Number"
+         android:ems="10"
+         android:layout_marginLeft="5dp"
+         android:inputType="phone" />
+       
+        <Button
+         android:id="@+id/fetchTeleContact"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_below="@+id/editTelephone"
+         android:layout_centerHorizontal="true"
+         android:background="@android:color/holo_blue_light"
+          android:layout_marginTop="18dp"
+         android:text=" Add from contacts" />
+
+</RelativeLayout>

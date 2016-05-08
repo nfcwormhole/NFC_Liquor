@@ -1,0 +1,169 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".Mail" >
+    
+    
+    <ScrollView 
+ 	 android:layout_width="fill_parent"
+ 	 android:layout_height="fill_parent">
+ 	 <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  >
+    
+    <TextView
+        android:id="@+id/mailHeading"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp"
+        android:background="@drawable/button_nfc_action"
+        android:drawableLeft="@drawable/mail"
+        android:padding="10dp"
+        android:text="Mail Record "
+        android:textColor="#000000"
+        android:typeface="serif"
+       android:gravity="center" 
+        android:textAppearance="?android:attr/textAppearanceLarge"  />
+
+    <TextView
+        android:id="@+id/To"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/mailHeading"
+        android:layout_below="@+id/mailHeading"
+        android:layout_marginTop="40dp"
+        android:text="To"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/Cc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/To"
+        android:layout_below="@+id/labelTo"
+        android:layout_marginTop="10dp"
+        android:text="Cc"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+    
+     <TextView
+        android:id="@+id/Bcc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/To"
+        android:layout_below="@+id/labelCc"
+        android:layout_marginTop="10dp"
+        android:text="Bcc"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+     
+      <TextView
+        android:id="@+id/Subject"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/To"
+        android:layout_below="@+id/labelBcc"
+        android:layout_marginTop="10dp"
+        android:text="Subject"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+      
+       <TextView
+        android:id="@+id/Body"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/To"
+        android:layout_below="@+id/labelSubject"
+        android:layout_marginTop="10dp"
+        android:text="Body"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+      
+       
+
+    <TextView
+        android:id="@+id/labelTo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/To"
+       android:layout_below="@+id/mailHeading"
+        android:layout_marginTop="40dp"
+        android:layout_toRightOf="@+id/Subject"
+        android:layout_marginLeft="45dp"
+        android:text=""
+        android:layout_alignParentRight="true"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/labelCc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         android:layout_alignBaseline="@+id/Cc"
+         android:layout_below="@+id/labelTo"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/Subject"
+        android:layout_marginLeft="45dp"
+        android:text=""
+        android:layout_alignParentRight="true"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+    
+    <TextView
+        android:id="@+id/labelBcc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         android:layout_alignBaseline="@+id/Bcc"
+         android:layout_below="@+id/labelCc"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/Subject"
+        android:layout_marginLeft="45dp"
+        android:text=""
+        android:layout_alignParentRight="true"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+    
+    <TextView
+        android:id="@+id/labelSubject"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         android:layout_alignBaseline="@+id/Subject"
+         android:layout_below="@+id/labelBcc"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/Subject"
+        android:layout_marginLeft="45dp"
+        android:text=""
+        android:layout_alignParentRight="true"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+    
+    <TextView
+        android:id="@+id/labelBody"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         android:layout_alignBaseline="@+id/Body"
+       android:layout_below="@+id/labelSubject"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/Subject"
+        android:layout_marginLeft="45dp"
+        android:text=""
+        android:layout_alignParentRight="true"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+    
+     <Button
+        android:id="@+id/sendMail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/labelBody"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/button_nfc_action"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Send"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#000000"
+        android:typeface="serif" />
+
+   
+ </RelativeLayout>
+</ScrollView>
+</RelativeLayout>

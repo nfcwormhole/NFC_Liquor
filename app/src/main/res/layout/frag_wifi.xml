@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    
+     <TextView
+         android:id="@+id/wifi"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:layout_marginTop="18dp"
+         android:background="@drawable/button_nfc_action"
+         android:drawableLeft="@drawable/wifi"
+         android:gravity="center"
+         android:text="Wi-Fi Handover"
+         android:textAppearance="?android:attr/textAppearanceLarge"
+         android:textColor="#000000"
+         android:typeface="serif" />
+      <TextView
+         android:id="@+id/textView1"
+         android:name="@+id/textView1"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_below="@+id/wifi"
+         android:layout_centerHorizontal="true"
+         android:layout_marginTop="29dp"
+         android:text="Select Device"
+         android:textAppearance="?android:attr/textAppearanceLarge" />
+        
+        
+        <EditText
+        android:id="@+id/editText1"
+        android:name="@+id/edittext"
+      android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView2"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+      />
+       <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_alignLeft="@+id/editText1"
+        android:layout_alignRight="@+id/editText1"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="17dp" />
+        
+       
+       <TextView
+        android:id="@+id/textView2"
+        android:name="@+id/textView2"
+       android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spinner"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="Enter Network Key"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        />
+     
+
+</RelativeLayout>

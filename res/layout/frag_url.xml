@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+     <TextView
+         android:id="@+id/uri"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:paddingRight="40dp"
+        android:layout_marginTop="18dp"
+         android:background="@drawable/button_nfc_action"
+         android:drawableLeft="@drawable/internet"
+         android:gravity="center"
+         android:text="URL"
+         android:textAppearance="?android:attr/textAppearanceLarge"
+         android:textColor="#000000"
+         android:typeface="serif" />
+     
+     
+      <TextView
+         android:id="@+id/textView4"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_below="@+id/uri"
+         android:layout_centerHorizontal="true"
+         android:layout_marginTop="24dp"
+         android:text="Enter URL"
+         android:textAppearance="?android:attr/textAppearanceLarge" />
+      
+         <EditText
+        android:id="@+id/editText3"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView4"
+        android:layout_centerHorizontal="true"
+        android:ems="10" 
+        android:text="http://"
+        android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+</RelativeLayout>

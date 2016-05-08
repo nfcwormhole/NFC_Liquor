@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+  <TextView
+         android:id="@+id/sms"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:paddingRight="40dp"
+         android:layout_marginTop="18dp"
+         android:background="@drawable/button_nfc_action"
+         android:drawableLeft="@drawable/sms"
+         android:gravity="center"
+         android:text="SMS"
+         android:textAppearance="?android:attr/textAppearanceLarge"
+         android:textColor="#000000"
+         android:typeface="serif" />
+      
+      <TextView
+         android:id="@+id/labelrecipient"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_below="@+id/sms"
+         android:layout_marginTop="18dp"
+        
+         android:text="Recipients"
+         android:textAppearance="?android:attr/textAppearanceMedium" />
+      
+       <EditText
+         android:id="@+id/editcontact"
+         android:layout_width="180dp"
+         android:layout_height="wrap_content"
+         android:layout_alignBottom="@+id/labelrecipient"
+         android:layout_toRightOf="@+id/labelrecipient"
+         android:ems="10"
+         android:layout_alignParentRight="true"
+         android:layout_marginLeft="5dp"
+         android:inputType="phone" />
+       
+       
+       
+       
+       
+       
+       <TextView
+         android:id="@+id/Recipients"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_below="@+id/labelrecipient"
+         android:layout_marginTop="13dp"
+        
+         android:text=""
+         android:textAppearance="?android:attr/textAppearanceMedium" />
+       <Button
+         android:id="@+id/addRec"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+           android:layout_centerHorizontal="true"
+             android:layout_below="@+id/Recipients"
+           android:background="@android:color/holo_blue_light"
+         
+         android:layout_marginLeft="2dp"
+          android:layout_marginTop="18dp"
+         android:text=" Add More " />
+       
+       <Button
+         android:id="@+id/fetchContact"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_below="@+id/addRec"
+         android:layout_centerHorizontal="true"
+         android:background="@android:color/holo_blue_light"
+          android:layout_marginTop="18dp"
+         android:text=" Add from contacts" />
+       
+       
+       <TextView
+         android:id="@+id/labelmessage"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_below="@+id/fetchContact"
+         android:layout_marginTop="18dp"
+      
+         android:text="Message"
+         android:textAppearance="?android:attr/textAppearanceMedium" />
+      
+       <EditText
+         android:id="@+id/editmessage"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignBottom="@+id/labelmessage"
+         android:layout_toRightOf="@+id/labelmessage"
+         android:ems="10"
+          android:layout_alignParentRight="true"
+         android:layout_marginLeft="5dp"
+          android:inputType="textMultiLine" />
+       
+       
+       
+</RelativeLayout>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+      <TextView
+         android:id="@+id/geolocation"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:layout_alignLeft="@+id/text"
+         android:layout_marginTop="18dp"
+         android:background="@drawable/button_nfc_action"
+         android:drawableLeft="@drawable/location"
+         android:gravity="center"
+         android:text="Geolocation"
+         android:textAppearance="?android:attr/textAppearanceLarge"
+         android:textColor="#000000"
+         android:typeface="serif" />
+       
+       
+        <EditText
+         android:id="@+id/editlatitude"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:layout_below="@+id/geolocation"
+         android:layout_marginTop="18dp"
+         android:hint="latitude"
+         android:ems="10"
+         android:layout_marginLeft="5dp"
+         android:inputType="phone" />
+       
+       
+       <EditText
+         android:id="@+id/editlongitude"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:layout_below="@+id/editlatitude"
+         android:layout_marginTop="18dp"
+         android:hint="longitude"
+         android:ems="10"
+         android:layout_marginLeft="5dp"
+         android:inputType="phone" />
+       
+        <Button
+         android:id="@+id/location"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_below="@+id/editlongitude"
+         android:layout_centerHorizontal="true"
+         android:background="@android:color/holo_blue_light"
+          android:layout_marginTop="18dp"
+         android:text="Current Location" />
+       
+
+</RelativeLayout>

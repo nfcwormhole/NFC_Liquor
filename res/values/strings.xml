@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Multiple NDEF Records </string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_sms">SMS</string>
+    <string name="title_activity_mail">Mail</string>
+    <string name="title_activity_telephone">Telephone</string>
+    <string name="title_activity_location">Location</string>
+    <string name="title_activity_frag__write">Frag_Write</string>
+
+</resources>

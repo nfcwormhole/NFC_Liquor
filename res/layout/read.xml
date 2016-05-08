@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp">
+    
+     <ScrollView 
+ 	 android:layout_width="fill_parent"
+ 	 android:layout_height="fill_parent">
+ 	 <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  >
+
+   
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+  
+        android:layout_below="@+id/button1"
+        android:layout_marginTop="23dp"
+        android:background="@drawable/button_nfc_action"
+        android:drawableLeft="@drawable/internet"
+        android:padding="10dp"
+        android:text="URL"
+        android:textColor="#000000"
+        android:typeface="serif" />
+
+       <Button
+        android:id="@+id/button3"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/button1"
+        android:layout_below="@+id/button2"
+        android:layout_marginTop="23dp"
+        android:background="@drawable/button_nfc_action"
+        android:drawableLeft="@drawable/contact"
+        android:padding="10dp"
+        android:text="Contact"
+        android:textColor="#000000"
+        android:typeface="serif" />
+       
+       
+          <Button
+        android:id="@+id/button4"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/button1"
+        android:layout_below="@+id/button3"
+        android:layout_marginTop="23dp"
+        android:background="@drawable/button_nfc_action"
+        android:drawableLeft="@drawable/wifi"
+        android:padding="10dp"
+        android:text="Wi-Fi Handover"
+        android:textColor="#000000"
+        android:typeface="serif" />
+    
+       <Button
+        android:id="@+id/button5"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/button1"
+        android:layout_below="@+id/button4"
+        android:layout_marginTop="23dp"
+        android:background="@drawable/button_nfc_action"
+        android:drawableLeft="@drawable/bluethoot"
+        android:padding="10dp"
+        android:text="Bluetooth Handover"
+        android:textColor="#000000"
+        android:typeface="serif" />
+    
+    
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:text="NDEF Menu "
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/button2"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/button_nfc_action"
+        android:drawableLeft="@drawable/text"
+        android:padding="10dp"
+        android:text="Text"
+        android:textColor="#000000"
+        android:typeface="serif" />
+    
+    
+    
+     <Button
+        android:id="@+id/btnsms"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/button2"
+        android:layout_below="@+id/button5"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/button_nfc_action"
+        android:drawableLeft="@drawable/sms"
+        android:padding="10dp"
+        android:text="SMS"
+        android:textColor="#000000"
+        android:typeface="serif" />
+     
+     
+     
+      <Button
+        android:id="@+id/btnmail"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/button2"
+        android:layout_below="@+id/btnsms"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/button_nfc_action"
+        android:drawableLeft="@drawable/mail"
+        android:padding="10dp"
+        android:text="Mail"
+        android:textColor="#000000"
+        android:typeface="serif" />
+      
+      
+      
+       <Button
+        android:id="@+id/btntelephone"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/button2"
+        android:layout_below="@+id/btnmail"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/button_nfc_action"
+        android:drawableLeft="@drawable/call"
+        android:padding="10dp"
+        android:text="Telephone Number"
+        android:textColor="#000000"
+        android:typeface="serif" />
+       
+       
+       
+        <Button
+        android:id="@+id/btnlocation"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/button2"
+        android:layout_below="@+id/btntelephone"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/button_nfc_action"
+        android:drawableLeft="@drawable/location"
+        android:padding="10dp"
+        android:text="Geolocation"
+        android:textColor="#000000"
+        android:typeface="serif" />
+
+    </RelativeLayout>
+</ScrollView>
+</RelativeLayout>
+

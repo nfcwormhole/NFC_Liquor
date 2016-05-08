@@ -9,13 +9,23 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
+<<<<<<< 7c82ec6bdf44909e4f8291fd9ea001869f398c62
+            <option value="$PROJECT_DIR$/ST25" />
+=======
+            <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/liquor" />
+>>>>>>> added liquor module
           </set>
         </option>
         <option name="myModules">
           <set>
             <option value="$PROJECT_DIR$" />
+<<<<<<< 7c82ec6bdf44909e4f8291fd9ea001869f398c62
             <option value="$PROJECT_DIR$/ST25" />
+=======
+            <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/liquor" />
+>>>>>>> added liquor module
           </set>
         </option>
       </GradleProjectSettings>

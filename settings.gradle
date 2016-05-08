@@ -1,1 +1,1 @@
-include ':ST25'
+include ':ST25', ':liquor'

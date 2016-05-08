@@ -31,5 +31,12 @@ proguard/
 # Android Studio captures folder
 captures/
 
+# Android Studio
 .idea
 *.iml
+
+# OSX files
+.DS_Store
+
+# Windows thumbnail db
+Thumbs.db

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    
+       <TextView
+         android:id="@+id/text"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:layout_alignParentTop="true"
+         android:layout_centerHorizontal="true"
+         android:layout_marginTop="18dp"
+         android:background="@drawable/button_nfc_action"
+         android:drawableLeft="@drawable/text"
+           android:paddingRight="40dp"
+         android:gravity="center"
+         android:text="Text"
+         android:textAppearance="?android:attr/textAppearanceLarge"
+         android:textColor="#000000"
+         android:typeface="serif" />
+       <TextView
+         android:id="@+id/textView3"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_below="@+id/text"
+         android:layout_centerHorizontal="true"
+         android:layout_marginTop="29dp"
+         android:text="Enter Text"
+         android:textAppearance="?android:attr/textAppearanceLarge" />
+        <EditText
+        android:id="@+id/editText2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editText1"
+        android:layout_below="@+id/textView3"
+        android:ems="10"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+       
+
+
+</RelativeLayout>

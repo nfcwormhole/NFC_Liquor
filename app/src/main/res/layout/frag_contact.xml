@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+ <TextView
+         android:id="@+id/contact"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+          android:paddingRight="40dp"
+          android:layout_marginTop="18dp"
+         android:background="@drawable/button_nfc_action"
+         android:drawableLeft="@drawable/contact"
+         android:gravity="center"
+         android:text="Contact"
+         android:textAppearance="?android:attr/textAppearanceLarge"
+         android:textColor="#000000"
+         android:typeface="serif" />
+ 
+ <Button
+         android:id="@+id/button2"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_below="@+id/contact"
+         android:layout_centerHorizontal="true"
+         android:background="@android:color/holo_blue_light"
+          android:layout_marginTop="18dp"
+         android:text=" Add contact" />
+ 
+ <TextView
+         android:id="@+id/textView8"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignLeft="@+id/textView7"
+         android:layout_below="@+id/textView7"
+         android:layout_marginTop="16dp"
+         android:text="E-mail"
+         android:textAppearance="?android:attr/textAppearanceMedium" />
+
+     <EditText
+         android:id="@+id/editText6"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignBottom="@+id/textView8"
+         android:layout_alignLeft="@+id/editText5"
+         android:layout_alignRight="@+id/editText5"
+        android:singleLine="true"
+         android:inputType="textEmailAddress" />
+
+     <TextView
+         android:id="@+id/textView9"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignLeft="@+id/textView8"
+         android:layout_below="@+id/textView8"
+         android:layout_marginTop="15dp"
+         android:text="Address"
+         android:textAppearance="?android:attr/textAppearanceMedium" />
+
+     <EditText
+         android:id="@+id/editText7"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignBottom="@+id/textView9"
+         android:layout_alignLeft="@+id/editText5"
+         android:layout_alignRight="@+id/editText6" 
+         android:singleLine="true"/>
+
+     <TextView
+         android:id="@+id/textView7"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignLeft="@+id/textView6"
+         android:layout_below="@+id/editText4"
+         android:layout_marginTop="18dp"
+         android:text="Phone"
+         android:textAppearance="?android:attr/textAppearanceMedium" />
+     
+     <TextView
+         android:id="@+id/textView6"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignBottom="@+id/editText4"
+         android:layout_toLeftOf="@+id/textView2"
+         android:text="Name"
+         android:textAppearance="?android:attr/textAppearanceMedium" />
+     
+      <TextView
+         android:id="@+id/textView7"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignLeft="@+id/textView6"
+         android:layout_below="@+id/editText4"
+         android:layout_marginTop="18dp"
+         android:text="Phone"
+         android:textAppearance="?android:attr/textAppearanceMedium" />
+     
+      
+       <EditText
+         android:id="@+id/editText4"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_below="@+id/button2"
+         android:layout_alignParentRight="true"
+         android:ems="10" >
+
+        
+     </EditText>
+
+     <EditText
+         android:id="@+id/editText5"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignBottom="@+id/textView7"
+         android:layout_alignLeft="@+id/editText4"
+         android:ems="10"
+         android:inputType="phone" />
+ 
+</RelativeLayout>

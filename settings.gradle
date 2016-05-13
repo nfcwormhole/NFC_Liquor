@@ -1,1 +1,2 @@
 include ':ST25', ':liquor'
+include ':NfcV_Reader'

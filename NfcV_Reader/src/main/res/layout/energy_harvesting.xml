@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:background="@color/White">
+
+	<ImageView  android:id="@+id/ivBanner_read"
+	    		android:layout_width="fill_parent" 
+	    		android:layout_height="fill_parent" 
+				android:background="@drawable/background"  />
+
+	<LinearLayout android:id="@+id/lyWrite"
+	    		  android:orientation="horizontal"
+				  android:layout_width="fill_parent"
+				  android:layout_height="wrap_content"
+				  android:layout_below="@+id/ivBanner_read" 
+				  android:layout_alignParentTop="true" 
+				  android:layout_marginTop="65dp">
+
+		<EditText
+		    android:id="@+id/editText1"
+		    android:layout_width="wrap_content"
+		    android:layout_height="30dp"
+		    android:layout_weight="1"
+		    android:editable="false"
+		    android:ems="10"
+		    android:focusable="false"
+		    android:text="     ENERGY HARVESTING CONFIGURATION (M24LRxxE only)"
+		    android:textSize="10dp" >
+
+		</EditText>
+
+	</LinearLayout>
+
+	<LinearLayout android:id="@+id/lyEHconfig" 
+	    		  android:orientation="horizontal"
+				  android:layout_width="fill_parent" 
+				  android:layout_height="40dp"
+				  android:layout_marginTop="10dp"
+				  android:layout_below="@+id/lyWrite">
+		
+		<TextView android:id="@+id/textview1"
+		    	  android:layout_width="wrap_content"
+				  android:layout_height="wrap_content" 				  
+				  android:text="EH CONFIG byte"
+				  android:textSize="14dp" 
+				  android:gravity="center"
+				  android:layout_marginLeft="10dp"
+				  android:layout_marginRight="10dp" />
+		
+		<EditText
+		    android:id="@+id/EHconfigByte"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_marginLeft="5dp"
+		    android:imeOptions="actionDone"
+		    android:inputType="text"
+		    android:maxLength="2"
+		    android:singleLine="true"
+		    android:text="00"
+		    android:textSize="14dp" />
+		
+	</LinearLayout>			
+		
+	<Button android:id="@+id/button_ReadEHconfig"
+		       	android:layout_width="wrap_content" 
+				android:layout_height="wrap_content"
+				android:layout_centerHorizontal="true"
+				android:layout_marginTop="10dp"
+				android:layout_below="@+id/lyEHconfig" 
+				android:background="@drawable/selector_read_eh_config" />
+
+	<Button android:id="@+id/button_WriteEHconfig"
+		    	android:layout_width="wrap_content" 
+				android:layout_height="wrap_content"
+				android:layout_marginTop="10dp"
+				android:layout_centerHorizontal="true"
+				android:layout_below="@+id/button_ReadEHconfig"
+				android:background="@drawable/selector_write_eh_config" />
+		    
+	<Button android:id="@+id/button_WriteD0config"
+		    	android:layout_width="wrap_content" 
+				android:layout_height="wrap_content" 
+				android:layout_marginTop="10dp"
+				android:layout_centerHorizontal="true"
+				android:layout_below="@+id/button_WriteEHconfig"
+				android:background="@drawable/selector_write_d0_config"
+				android:layout_marginLeft="10dp"/>			
+
+		<LinearLayout android:id="@+id/lyEHenable"
+	    		  android:orientation="horizontal"
+				  android:layout_width="fill_parent"
+				  android:layout_height="wrap_content"
+				  android:layout_below="@+id/button_WriteD0config" 
+				  android:layout_marginTop="11dp">
+
+		<EditText
+		    android:id="@+id/editText1A"
+		    android:layout_width="wrap_content"
+		    android:layout_height="30dp"
+		    android:layout_weight="1"
+		    android:editable="false"
+		    android:ems="10"
+		    android:text="     ENERGY HARVESTING ENABLE CONTROL (M24LRxxE only)"
+		    android:textSize="10dp" >
+
+		</EditText>
+
+	</LinearLayout>
+			
+	<LinearLayout android:id="@+id/EHenable" 
+	    		  android:orientation="horizontal"
+				  android:layout_width="fill_parent" 
+				  android:layout_height="40dp"
+				  android:layout_marginTop="10dp"
+				  android:layout_below="@+id/lyEHenable">
+		
+		<TextView android:layout_width="wrap_content"
+				  android:layout_height="wrap_content" 
+				  android:text="EH ENABLE byte"
+				  android:textSize="14dp" 
+				  android:gravity="center"
+				  android:layout_marginRight="10dp"
+				  android:layout_marginLeft="10dp" />
+		
+		<EditText
+		    android:id="@+id/EHenableByte"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_marginLeft="5dp"
+		    android:enabled="false"
+		    android:imeOptions="actionDone"
+		    android:inputType="text"
+		    android:maxLength="2"
+		    android:singleLine="true"
+		    android:text="00"
+		    android:textSize="14dp" />
+			
+	</LinearLayout>
+		
+	<Button android:id="@+id/button_CheckEHenable"
+		       	android:layout_width="wrap_content" 
+				android:layout_height="wrap_content"
+				android:layout_marginTop="10dp"
+				android:layout_centerHorizontal="true"
+				android:layout_below="@+id/EHenable" 
+				android:background="@drawable/selector_check_eh_enable"	/>
+
+	<Button android:id="@+id/button_ResetEHenable"
+		    	android:layout_width="wrap_content" 
+				android:layout_height="wrap_content"
+				android:layout_marginTop="10dp"
+				android:layout_centerHorizontal="true"
+				android:layout_below="@+id/button_CheckEHenable"
+				android:background="@drawable/selector_reset_eh_enable" />
+		    
+	<Button android:id="@+id/button_SetEHenable"
+		    	android:layout_width="wrap_content" 
+				android:layout_height="wrap_content" 
+				android:layout_marginTop="10dp"
+				android:layout_centerHorizontal="true"
+				android:layout_below="@+id/button_ResetEHenable"
+				android:background="@drawable/selector_set_eh_enable"/>		
+	
+</RelativeLayout>

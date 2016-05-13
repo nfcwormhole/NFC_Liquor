@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.nfc.apps"
+    android:versionCode="5"
+    android:versionName="5.0">
+
+    <uses-permission android:name="android.permission.NFC" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-feature
+        android:name="android.hardware.nfc"
+        android:required="true" />
+
+    <application
+        android:name=".DataDevice"
+        android:debuggable="false"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:theme="@style/NFCVReader">
+
+        <!--
+                <activity
+                    android:name=".NFCappsActivity"
+                    android:label="@string/app_name"
+                    android:screenOrientation="portrait">
+                    <intent-filter>
+
+                        <action android:name="android.intent.action.MAIN" />
+                        <category android:name="android.intent.category.LAUNCHER" />
+                    </intent-filter>
+                </activity>
+        -->
+
+        <activity
+            android:name=".NFCappsActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait">
+            <intent-filter>
+
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.nfc.action.TECH_DISCOVERED" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.nfc.action.TECH_DISCOVERED"
+                android:resource="@xml/nfc_tech_filter" />
+        </activity>
+
+        <activity
+            android:name=".Scan"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".StandardMenu"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ScanRead"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".BasicWrite"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".FileManagement"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ImageTransfer"
+            android:screenOrientation="portrait" />
+        <activity android:name=".ImageTransferDisplay" />
+        <activity
+            android:name=".PasswordManagement"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".LockSectorManagement"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".EHmanagement"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".NDEFMenu"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".NDEFWrite"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".NDEFRead"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".NDEFLibrary"
+            android:screenOrientation="portrait" />
+    </application>
+</manifest>

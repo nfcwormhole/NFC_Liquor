@@ -250,7 +250,7 @@ public class ImageTransfer extends Activity
 				addressFirstStart = Helper.ConvertIntTo2bytesHexaFormat(0x00);
 				while((ReadFirstBlockAnswer == null || ReadFirstBlockAnswer[0] == 1) && cpt <= 10)
 				{
-					//Used for DEBUG : Log.i("ScanRead", "Dans le several read single block le cpt est ˆ -----> " + String.valueOf(cpt));
+					//Used for DEBUG : Log.i("ScanRead", "Dans le several read single block le cpt est -----> " + String.valueOf(cpt));
 					ReadFirstBlockAnswer = NFCCommand.SendReadSingleBlockCommand(dataDevice.getCurrentTag(),addressFirstStart,dataDevice);
 					cpt ++;
 				}
@@ -265,7 +265,7 @@ public class ImageTransfer extends Activity
 						//{
 						//	while ((ReadMultipleBlockAnswer == null || ReadMultipleBlockAnswer[0] == 1) && cpt <= 10 )
 						//	{
-						//		Log.i("ScanRead", "Dans le read SINGLE le cpt est ˆ -----> " + String.valueOf(cpt));
+						//		Log.i("ScanRead", "Dans le read SINGLE le cpt est -----> " + String.valueOf(cpt));
 						//		ReadMultipleBlockAnswer = NFCCommand.SendReadSingleBlockCommand(dataDevice.getCurrentTag(),addressStart, dataDevice);
 						//		cpt ++;
 						//	}
@@ -276,7 +276,7 @@ public class ImageTransfer extends Activity
 						{
 							while((ReadMultipleBlockAnswer == null || ReadMultipleBlockAnswer[0] == 1) && cpt <= 10)
 							{
-								//Used for DEBUG : Log.i("ScanRead", "Dans le several read single block le cpt est ˆ -----> " + String.valueOf(cpt));
+								//Used for DEBUG : Log.i("ScanRead", "Dans le several read single block le cpt est -----> " + String.valueOf(cpt));
 								ReadMultipleBlockAnswer = NFCCommand.Send_several_ReadSingleBlockCommands_NbBlocks_JPG(dataDevice.getCurrentTag(),addressStart,numberOfBlockToRead, dataDevice);
 								cpt ++;
 							}
@@ -286,7 +286,7 @@ public class ImageTransfer extends Activity
 						{
 							while((ReadMultipleBlockAnswer == null || ReadMultipleBlockAnswer[0] == 1) && cpt <= 10)
 							{
-								//Used for DEBUG : Log.i("ScanRead", "Dan le read MULTIPLE 1 le cpt est ˆ -----> " + String.valueOf(cpt));
+								//Used for DEBUG : Log.i("ScanRead", "Dan le read MULTIPLE 1 le cpt est -----> " + String.valueOf(cpt));
 								ReadMultipleBlockAnswer = NFCCommand.SendReadMultipleBlockCommandCustom_JPG(dataDevice.getCurrentTag(),addressStart,numberOfBlockToRead[1], dataDevice);
 								cpt ++;
 							}
@@ -296,7 +296,7 @@ public class ImageTransfer extends Activity
 						{
 							while ((ReadMultipleBlockAnswer == null || ReadMultipleBlockAnswer[0] == 1) && cpt <= 10)
 							{
-								//Used for DEBUG : Log.i("ScanRead", "Dans le read MULTIPLE 2 le cpt est ˆ -----> " + String.valueOf(cpt));
+								//Used for DEBUG : Log.i("ScanRead", "Dans le read MULTIPLE 2 le cpt est -----> " + String.valueOf(cpt));
 								ReadMultipleBlockAnswer = NFCCommand.SendReadMultipleBlockCommandCustom2_JPG(dataDevice.getCurrentTag(),addressStart,numberOfBlockToRead, dataDevice);
 								cpt ++;
 							}

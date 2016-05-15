@@ -41,7 +41,12 @@ public class Main2Activity extends AppCompatActivity {
             msgs = sReadNdef.split("\\r\\n");
             if (msgs.length < 5)
                 return;
-            textView1.setText(msgs[1]);
+
+            if (msgs[1].equals("1")) {
+                textView1.setText("是");
+            } else {
+                textView1.setText("否");
+            }
             textView2.setText(msgs[2]);
             textView3.setText(msgs[3]);
             textView4.setText(msgs[4]);

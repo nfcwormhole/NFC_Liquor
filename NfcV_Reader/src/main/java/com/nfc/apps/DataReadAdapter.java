@@ -7,29 +7,27 @@
 
 package com.nfc.apps;
 
-import java.util.List;
-
 import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.TextView;
+
+import java.util.List;
 //import android.util.Log;
 
-public class DataReadAdapter extends BaseAdapter
-{
-	private Context context;
+public class DataReadAdapter extends BaseAdapter {
+    private Context context;
 
     private List<DataRead> listDataRead;
 
-    public DataReadAdapter(Context context, List<DataRead> listData)
-    {
+    public DataReadAdapter(Context context, List<DataRead> listData) {
         this.context = context;
         this.listDataRead = listData;
     }
 
-	public int getCount() {
+    public int getCount() {
         return listDataRead.size();
     }
 
@@ -41,11 +39,9 @@ public class DataReadAdapter extends BaseAdapter
         return position;
     }
 
-    public View getView(int position, View convertView, ViewGroup viewGroup)
-    {
+    public View getView(int position, View convertView, ViewGroup viewGroup) {
         DataRead entry = listDataRead.get(position);
-        if (convertView == null)
-        {
+        if (convertView == null) {
             LayoutInflater inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
             convertView = inflater.inflate(R.layout.data_row, null);
         }

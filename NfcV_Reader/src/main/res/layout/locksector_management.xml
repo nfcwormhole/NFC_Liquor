@@ -2,7 +2,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:background="@color/White" >
+    android:background="@color/White">
 
     <ImageView
         android:id="@+id/ivBanner_read"
@@ -11,24 +11,24 @@
         android:background="@drawable/background" />
 
     <TextView
-		android:id="@+id/textView1"
-		android:layout_width="wrap_content"	
-		android:layout_height="wrap_content"
-		android:layout_centerHorizontal="true"
-		android:layout_marginRight="30dp"
-		android:layout_marginTop="65dp"
-		android:text="Sector Number"
-		android:textSize="18dp" />
-    
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="65dp"
+        android:text="Sector Number"
+        android:textSize="18dp" />
+
     <LinearLayout
         android:id="@+id/lyWrite"
         android:layout_width="fill_parent"
-        android:layout_height="wrap_content"     
+        android:layout_height="wrap_content"
         android:layout_below="@+id/textView1"
-        android:layout_marginTop="10dp"
         android:layout_centerHorizontal="true"
-        android:orientation="horizontal" >
-	    
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
         <EditText
             android:id="@+id/etvalue1"
             android:layout_width="wrap_content"
@@ -52,21 +52,21 @@
         android:layout_marginTop="25dp"
         android:text="Lock Configuration"
         android:textSize="18dp" />
-        
+
     <LinearLayout
         android:id="@+id/lyffWrite"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
         android:layout_below="@+id/textView2"
+        android:layout_centerHorizontal="true"
         android:layout_marginTop="10dp"
-        android:orientation="horizontal" >
-    
+        android:orientation="horizontal">
+
         <RadioGroup
             android:id="@+id/RadioGroup2"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal" >
+            android:orientation="horizontal">
 
             <RadioButton
                 android:id="@+id/LockConfig00"
@@ -107,68 +107,68 @@
     </LinearLayout>
 
 
-	<TextView
-	    android:id="@+id/textView3"
-		android:layout_width="wrap_content"
-		android:layout_height="wrap_content"
-		android:layout_centerHorizontal="true"
-		android:layout_below="@+id/lyffWrite"
-		android:layout_marginTop="35dp"
-		android:text="Password number"
-		android:textSize="18dp" />
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lyffWrite"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35dp"
+        android:text="Password number"
+        android:textSize="18dp" />
 
     <LinearLayout
         android:id="@+id/lyzzaaWrite"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
         android:layout_below="@+id/textView3"
+        android:layout_centerHorizontal="true"
         android:layout_marginTop="10dp"
-        android:orientation="horizontal" >
-            
-            <RadioGroup
-                android:id="@+id/RadioGroup1"
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal" >
+        android:orientation="horizontal">
 
-                <RadioButton
-                    android:id="@+id/pwd1"
-                    android:layout_weight="1"
-                    android:checked="true"
-                    android:gravity="center"
-                    android:text="1"
-                    android:textColor="#FF565656"
-                    android:textStyle="bold" />
+        <RadioGroup
+            android:id="@+id/RadioGroup1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
 
-                <RadioButton
-                    android:id="@+id/pwd2"
-                    android:layout_weight="1"
-                    android:checked="false"
-                    android:gravity="center"
-                    android:text="2"
-                    android:textColor="#FF565656"
-                    android:textStyle="bold" />
+            <RadioButton
+                android:id="@+id/pwd1"
+                android:layout_weight="1"
+                android:checked="true"
+                android:gravity="center"
+                android:text="1"
+                android:textColor="#FF565656"
+                android:textStyle="bold" />
 
-                <RadioButton
-                    android:id="@+id/pwd3"
-                    android:layout_weight="1"
-                    android:checked="false"
-                    android:gravity="center"
-                    android:text="3"
-                    android:textColor="#FF565656"
-                    android:textStyle="bold" />
-            </RadioGroup>
+            <RadioButton
+                android:id="@+id/pwd2"
+                android:layout_weight="1"
+                android:checked="false"
+                android:gravity="center"
+                android:text="2"
+                android:textColor="#FF565656"
+                android:textStyle="bold" />
+
+            <RadioButton
+                android:id="@+id/pwd3"
+                android:layout_weight="1"
+                android:checked="false"
+                android:gravity="center"
+                android:text="3"
+                android:textColor="#FF565656"
+                android:textStyle="bold" />
+        </RadioGroup>
     </LinearLayout>
 
     <LinearLayout
         android:id="@+id/llPresentScreen"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/lyzzaaWrite"
         android:layout_alignParentBottom="true"
+        android:layout_below="@+id/lyzzaaWrite"
         android:layout_centerHorizontal="true"
-        android:orientation="horizontal" >
+        android:orientation="horizontal">
 
         <Button
             android:id="@+id/button_writepassword"
@@ -183,25 +183,25 @@
         android:id="@+id/llPresentScreen"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/llPresentScreen"
         android:layout_alignParentBottom="true"
+        android:layout_below="@+id/llPresentScreen"
         android:layout_centerHorizontal="true"
-        android:orientation="horizontal" >    
+        android:orientation="horizontal">
 
-		    <EditText
-		        android:id="@+id/editText1"
-		        android:layout_width="280dp"
-		        android:layout_height="wrap_content"
-		        android:layout_alignParentBottom="true"
-		        android:layout_alignParentLeft="true"
-		        android:layout_centerHorizontal="true"
-		        android:editable="false"
-		        android:ems="10"
-		        android:text="        Command set only available for M24LRxx family"
-		        android:textSize="10dp" >
-		
-		        <requestFocus />
-		    </EditText>
- 	</LinearLayout>
- 
+        <EditText
+            android:id="@+id/editText1"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_centerHorizontal="true"
+            android:editable="false"
+            android:ems="10"
+            android:text="        Command set only available for M24LRxx family"
+            android:textSize="10dp">
+
+            <requestFocus />
+        </EditText>
+    </LinearLayout>
+
 </RelativeLayout>

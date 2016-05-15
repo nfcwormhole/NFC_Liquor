@@ -7,53 +7,52 @@
 
 package com.nfc.apps;
 
-import java.util.List;
 import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.TextView;
+
+import java.util.List;
 //import android.util.Log;
 
-public class LibraryNDEFAdapter extends BaseAdapter{
+public class LibraryNDEFAdapter extends BaseAdapter {
 
-	private Context context;
-    private List<NDEFStructure> listOfNDEFMessages;
     LayoutInflater inflater;
-    
-	public LibraryNDEFAdapter(Context context, List<NDEFStructure> list)
-    {
+    private Context context;
+    private List<NDEFStructure> listOfNDEFMessages;
+
+    public LibraryNDEFAdapter(Context context, List<NDEFStructure> list) {
         this.context = context;
         this.listOfNDEFMessages = list;
         inflater = LayoutInflater.from(context);
     }
-	
-	@Override
-	public int getCount() {
-		return listOfNDEFMessages.size();
-	}
 
-	@Override
-	public Object getItem(int position) {
-		return listOfNDEFMessages.get(position);
-	}
+    @Override
+    public int getCount() {
+        return listOfNDEFMessages.size();
+    }
 
-	@Override
-	public long getItemId(int position) {
-		return position;
-	}
+    @Override
+    public Object getItem(int position) {
+        return listOfNDEFMessages.get(position);
+    }
 
-	@Override
-	public View getView(int position, View convertView, ViewGroup parent) {
-		
-		NDEFStructure entry = listOfNDEFMessages.get(position);
-        if (convertView == null)
-        {
-        	LayoutInflater inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+    @Override
+    public long getItemId(int position) {
+        return position;
+    }
+
+    @Override
+    public View getView(int position, View convertView, ViewGroup parent) {
+
+        NDEFStructure entry = listOfNDEFMessages.get(position);
+        if (convertView == null) {
+            LayoutInflater inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
             convertView = inflater.inflate(R.layout.library_row, null);
         }
-        
+
         TextView messageBlock = (TextView) convertView.findViewById(R.id.messageNdef);
         messageBlock.setText(entry.getMessage());
 
@@ -61,6 +60,6 @@ public class LibraryNDEFAdapter extends BaseAdapter{
         dateBlock.setText(entry.getDate());
 
         return convertView;
-	}
+    }
 
 }

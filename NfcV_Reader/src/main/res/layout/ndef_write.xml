@@ -1,46 +1,87 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-	android:layout_width="fill_parent" android:layout_height="fill_parent"
-	android:background="@color/White">
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/White">
 
-	<ImageView android:layout_width="fill_parent" android:layout_height="fill_parent" 
-		android:background="@drawable/background" android:id="@+id/ivBanner_read" />
+    <ImageView
+        android:id="@+id/ivBanner_read"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/background" />
 
-	<RadioGroup android:layout_width="fill_parent"
-		 android:layout_height="wrap_content" android:layout_marginTop = "50dp"
-		android:orientation="horizontal" android:id="@+id/RadioGroup1">
-		<RadioButton android:checked="true" android:id="@+id/option1"
-			android:layout_weight="1" android:text="TEXT" android:textColor="#FFFFFFFF"
-			android:textStyle="bold" android:gravity="center" android:background="#FF565656" />
-		<RadioButton android:checked="false" android:id="@+id/option2"
-			android:layout_weight="1" android:text="URL" android:textColor="#FFFFFFFF"
-			android:textStyle="bold" android:background="#FF565656"
-			android:gravity="center" />
-	</RadioGroup>
+    <RadioGroup
+        android:id="@+id/RadioGroup1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:orientation="horizontal">
 
-	<EditText android:layout_marginTop = "110dp" android:gravity="top"
-		android:layout_width="295dp" android:background ="#DDFFFFFF"
-		android:layout_height="wrap_content" android:id="@+id/etNdefWrite"
-		android:imeOptions="actionDone" 
-		android:lines = "6" android:layout_marginLeft = "10dp"
-		/>
-		
-	
-	<RelativeLayout android:id="@+id/lyNdefWrite" android:orientation="horizontal" 
-		android:layout_below="@+id/etNdefWrite" android:layout_marginTop = "10dp"
-		android:layout_width="wrap_content" android:layout_height="wrap_content" >
-	
-	
-	<Button android:id="@+id/ndefClearEdit" android:layout_weight="1"
-		android:layout_width="wrap_content"  android:layout_height="wrap_content"
-		android:text="" android:background="@drawable/selector_clear"
-		android:layout_marginLeft = "10dp"/>
-	
-	<Button android:id="@+id/ndefWriteEdit" android:layout_weight="1" 
-		android:layout_height="wrap_content" android:layout_width="wrap_content"  android:text="" 
-		android:background="@drawable/selector_write_command" android:layout_marginLeft = "170dp"/>
-	
-	</RelativeLayout>
-	
-	
+        <RadioButton
+            android:id="@+id/option1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#FF565656"
+            android:checked="true"
+            android:gravity="center"
+            android:text="TEXT"
+            android:textColor="#FFFFFFFF"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/option2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#FF565656"
+            android:checked="false"
+            android:gravity="center"
+            android:text="URL"
+            android:textColor="#FFFFFFFF"
+            android:textStyle="bold" />
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/etNdefWrite"
+        android:layout_width="295dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="110dp"
+        android:background="#DDFFFFFF"
+        android:gravity="top"
+        android:imeOptions="actionDone"
+        android:lines="6" />
+
+
+    <RelativeLayout
+        android:id="@+id/lyNdefWrite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etNdefWrite"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+
+        <Button
+            android:id="@+id/ndefClearEdit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/selector_clear"
+            android:text="" />
+
+        <Button
+            android:id="@+id/ndefWriteEdit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="170dp"
+            android:layout_weight="1"
+            android:background="@drawable/selector_write_command"
+            android:text="" />
+
+    </RelativeLayout>
+
+
 </RelativeLayout>
